@@ -3,6 +3,7 @@ import 'package:gexxx_flutter/models/language.dart';
 import 'package:gexxx_flutter/screens/authenticate/login2.dart';
 import 'package:gexxx_flutter/utilities/MyVerticalDivider.dart';
 import 'package:gexxx_flutter/utilities/MyhorizantalDivider.dart';
+import 'package:gexxx_flutter/app_localizations.dart';
 
 class LanguagePage extends StatefulWidget {
   @override
@@ -116,7 +117,7 @@ void initState() {
               
               backgroundColor: Colors.grey[800],
               isExtended: true,
-              label: Text('Next'),
+              label: Text(AppLocalizations.of(context).translate('Next')),
               elevation: 2,
               tooltip: 'next',
               onPressed: (){

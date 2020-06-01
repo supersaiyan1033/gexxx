@@ -28,7 +28,6 @@ class MyApp extends StatelessWidget {
             child: MaterialApp(
               supportedLocales: [
           Locale('en','US'),
-          Locale('es','ES'),
           Locale('hi','IN')
         ],
         localizationsDelegates: [
@@ -38,7 +37,7 @@ class MyApp extends StatelessWidget {
         ],
         localeListResolutionCallback: (locale, supportedLocales){
           
-           return supportedLocales.elementAt(1);
+           return supportedLocales.elementAt(0);
         },
               debugShowCheckedModeBanner: false,
               home: Wrapper(),
